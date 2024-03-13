@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>sql 페이지입니다</h1>
+    <th:block th:each="world : ${worldList}" th:object="${world}">
+        <span th:text="*{name}"></span>
+        <span th:text="*{population}"></span>
+        <br>
+    </th:block>
+
+    <h3>끝!</h3>
+</body>
+</html>

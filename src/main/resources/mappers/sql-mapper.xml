@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<!-- 연결할 인터페이스의 패키지명.인터페이스명을 작성 -->
+<mapper namespace="com.khgroup.khstudy.sql.model.mapper.SqlMapper">
+
+    <select id="getAllWorld" resultType="World">
+        select name, population
+        from country
+        where population >= 10000000
+    </select>
+	
+</mapper>
